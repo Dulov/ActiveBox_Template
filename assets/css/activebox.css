@@ -4,6 +4,8 @@ body {
 	font-size: 14px;
 	color: #6c7279;
 
+	background-color: gold;
+
 	margin: 0;
 }
 
@@ -13,7 +15,13 @@ body {
 	box-sizing: border-box;
 }
 
+/* HEADER 
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+*/
 
+.header {
+
+}
 
 
 
