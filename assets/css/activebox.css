@@ -80,7 +80,7 @@ body {
 
 .intro {
 	height: 750px;
-	background: #31344e url("assets/images/intro/intro.jpg") center no-repeat;
+	background: #31344e url("../../assets/images/intro/intro.jpg") center no-repeat;
 	background-size: cover;
 }
 
