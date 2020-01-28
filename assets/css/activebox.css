@@ -325,6 +325,7 @@ p {
 
 .social {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .social--footer {
@@ -521,4 +522,103 @@ p {
 .copyright__text b {
 	color: #e84545;
 	font-size: 20px;
+}
+
+/* BURGER
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+*/
+
+.burger {
+	display: none;
+
+	padding: 9px 2px;
+	background: none;
+	border: 0;
+
+	cursor: pointer;
+
+	outline: 0;
+}
+
+.burger__item {
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: #fff;
+
+
+	font-size: 0;
+
+	color: transparent;
+
+	position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+	content: "";
+	height: 100%;
+
+	position: absolute;
+	right: 0;
+	z-index: 1;
+	background-color: #fff;
+}
+
+.burger__item:before {
+	width: 25px;
+	top: -8px;
+}
+
+.burger__item:after {
+	width: 27px;
+	bottom: -8px;
+}
+
+/* MEDIA
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+*/
+
+@media (max-width: 991px)  {
+
+	/*NAV*/
+
+	.nav {
+		display: none;
+	}
+
+	/*BURGER*/
+
+	.burger {
+		display: block;
+	}
+
+	/*INTRO*/
+
+	.intro__title {
+		font-size: 40px;
+	}
+	
+}
+
+@media (max-width: 767px) {
+
+	/*INTRO*/
+
+	.intro {
+		height: auto;
+		padding-top: 130px;
+		padding-bottom: 30px;
+	}
+
+	.intro__title {
+		font-size: 30px;
+	}
+
+	.intro__text {
+		font-size: 16px;
+
+		margin-bottom: 30px;
+	}
+
 }
