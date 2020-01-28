@@ -633,6 +633,24 @@ p {
 	.social {
 		justify-content: center;
 	}
+
+	/*REVIEWS*/
+
+	.reviews__photo {
+		overflow: hidden;
+		width: 100%;
+		margin: 15px 0 40px;
+	}
+
+	.reviews__content {
+		width: 100%;
+		padding-left: 0;
+		padding-bottom: 40px;
+	}
+
+	.reviews__img {
+		right: -15px;
+	}
 	
 }
 
@@ -686,4 +704,51 @@ p {
 		width: 100%;
 	}
 
+	/*REVIEWS*/
+
+	.reviews__text {
+		font-size: 25px;
+	}
+
+	/*BUTTON*/
+
+	.btn--long {
+		min-width: 250px;
+	}
+
+	/*DOWNLOAD*/
+
+	.download {
+		margin: 50px 0; 
+	}
+	
+	.download__title {
+		font-size: 24px;
+	}
+
+	/*FOOTER*/
+	
+	.footer__inner {
+		padding: 30px 0;
+	}
+
+	.footer__block {
+		width: 100%;
+		padding-bottom: 30px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.footer__block:last-child {
+		padding-bottom: 0;
+	}
+}
+
+@media (max-width: 414px) {
+	
+	/*REVIEWS*/
+
+	.reviews__img {
+		right: -120px;
+	}
 }
