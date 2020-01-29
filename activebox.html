@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/activebox.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:300,400,600,700&display=swap" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<title>Active Box</title>
@@ -51,18 +52,18 @@
 		<div class="header__inner">
 
 			<div class="header__logo">
-				<img src="assets/images/header/logo.png" alt="">
+				<img src="assets/images/header/logo.png" alt="" data-scroll="#intro">
 			</div>
 
-			<nav class="nav">
-				<a href="#" class="nav__link">Features</a>
-				<a href="#" class="nav__link">Works</a>
-				<a href="#" class="nav__link">Our Team</a>
-				<a href="#" class="nav__link">Testimonials</a>
-				<a href="#" class="nav__link">Download</a>
+			<nav class="nav" id="nav">
+				<a href="#" class="nav__link" data-scroll="#features">Features</a>
+				<a href="#" class="nav__link" data-scroll="#works">Works</a>
+				<a href="#" class="nav__link" data-scroll="#team">Our Team</a>
+				<a href="#" class="nav__link" data-scroll="#reviews">Testimonials</a>
+				<a href="#" class="nav__link" data-scroll="#download">Download</a>
 			</nav>
 
-			<button class="burger" type="button">
+			<button class="burger" type="button" id="navToggle">
 				<span class="burger__item">Menu</span>
 			</button>
 
@@ -96,7 +97,7 @@
 </div><!-- intro --> 
 
 <!-- Features -->
-<div class="features">
+<div class="features" id="features">
 	<div class="container">
 		
 	  <div class="features__inner">
@@ -181,7 +182,7 @@
 
 
 <!-- Works -->
-<div class="works">
+<div class="works" id="works">
 	
 	<div class="works__item">
 
@@ -299,7 +300,7 @@
 
 
 <!-- Team -->
-<div class="team">
+<div class="team" id="team">
 	<div class="container">
 
 		<div class="team__inner">
@@ -415,21 +416,41 @@
 
 
  <!-- Reviews -->
-<div class="reviews">
+<div class="reviews" id="reviews">
 	
 	<div class="container">
-		
-		<div class="reviews__item">
-			<div class="reviews__photo">
-				<img class="reviews__img" src="assets/images/reviews/1.jpg" alt="">
-			</div>
-			<div class="reviews__content">
 
-				<div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+		<div class="reviews__slider" id="reviewsSlider">
+			<div>
+				<div class="reviews__item">
+					<div class="reviews__photo">
+						<img class="reviews__img" src="assets/images/reviews/1.jpg" alt="">
+					</div>
+					<div class="reviews__content">
 
-				<div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
-				
+						<div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+
+						<div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+						
+					</div>
+				</div>
 			</div>
+
+			<div>
+				<div class="reviews__item">
+					<div class="reviews__photo">
+						<img class="reviews__img" src="assets/images/reviews/1.jpg" alt="">
+					</div>
+					<div class="reviews__content">
+
+						<div class="reviews__text">“Iere erat a ante veo dui. Aenean eu leo quam..”</div>
+
+						<div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+						
+					</div>
+				</div>
+			</div>
+
 		</div>	
 
 	</div><!-- container -->
@@ -437,7 +458,7 @@
 </div><!-- reviews -->
 
 <!-- Download -->
-<div class="download">
+<div class="download" id="download">
 	<div class="container">
 
 		<h3 class="download__title">
@@ -518,6 +539,8 @@
 
 </footer><!-- footer --> 
 
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/app.js"></script>
 
 </body>
